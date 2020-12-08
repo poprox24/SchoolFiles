@@ -307,7 +307,7 @@
       if (query === null) return;
 
       for (const element of document.querySelectorAll(
-        `body .image:not(.${query})`
+        `div.flexbox .${query}`
       )) {
         element.remove();
       }
