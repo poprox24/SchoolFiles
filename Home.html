@@ -307,7 +307,7 @@
       if (query === null) return;
 
       for (const element of document.querySelectorAll(
-        `div.flexbox :not(.${query})`
+        `div.flexbox a:not(.${query})`
       )) {
         element.remove();
       }
