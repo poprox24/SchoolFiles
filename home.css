@@ -12,12 +12,12 @@ h2 {
 h3 {
   text-align: center;
 }
-.border{
-    width: 165px;
-    height: 2px;
-    background: lightgray;
-    margin: 5px auto;
-  }
+.border {
+  width: 165px;
+  height: 2px;
+  background: lightgray;
+  margin: 5px auto;
+}
 .sidebar {
   margin: 0;
   padding: 0;
@@ -45,6 +45,8 @@ h3 {
   width: 100%;
   height: auto;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .sidebar a {
   float: left;
@@ -59,19 +61,19 @@ div.content {
   }
 }
 .flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .img {
-    display: block;
-  }
-  .gallery {
-    margin: 0px;
-    border: 1px solid #ccc;
-    float: left;
-  }
-  img.gallery:hover {
-    border: 1px solid #777;
-  }
+  display: block;
+}
+.gallery {
+  margin: 0px;
+  border: 1px solid #ccc;
+  float: left;
+}
+img.gallery:hover {
+  border: 1px solid #777;
+}
