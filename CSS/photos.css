@@ -1,8 +1,7 @@
 .hoverover {
   transition: transform .2s;
-  /*Animation*/
   width: 150px;
-  height: 25px;
+  height: 150px;
   text-align: center;
   margin: 0 auto;
   cursor: pointer;

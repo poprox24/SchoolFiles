@@ -11,6 +11,8 @@
     element.remove();
   }
 })();
-var query2 = new URLSearchParams(window.location.search).get("q");
-document.getElementById("paragraph").innerHTML =
-  "Showing search results for: " + query2;
+var query2 = new URLSearchParams(window.location.search);
+if (query2.has("q")) {
+  document.getElementById("paragraph").innerHTML =
+    "Showing search results for: " + query2.get("q");
+}
