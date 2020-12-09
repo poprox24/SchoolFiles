@@ -1,5 +1,5 @@
 "use strict";
-const query = new URLSearchParams(window.location.search);
+
 (() => {
   const query = new URLSearchParams(window.location.search).get("q");
 
@@ -11,7 +11,6 @@ const query = new URLSearchParams(window.location.search);
     element.remove();
   }
 })();
-if (query.has("q")) {
-  document.getElementById("paragraph").innerHTML =
-    "Showing search results for: " + query.get("q");
-}
+var query2 = new URLSearchParams(window.location.search).get("q");
+document.getElementById("paragraph").innerHTML =
+  "Showing search results for: " + query2;

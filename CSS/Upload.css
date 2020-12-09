@@ -1,0 +1,26 @@
+h3 {
+  text-align: left;
+}
+input[type='text'], input[type='url'], input[type='email'] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: monospace;
+}
+input[type='submit'], input[type='reset'] {
+    background-color: #dd3e3e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+input[type='submit']:hover, input[type='reset']:hover{
+    background-color: #c94242;
+}form.submitted input:invalid{
+    border:1px solid #dd3e3e;;
+  }
