@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script defer src="JavaScripts/SubmitForm.js"></script>
     <meta charset="utf-8" />
     <script defer src="JavaScripts\NameRandomiser.js"></script>
     <script defer src="JavaScripts\InvalidForm.js"></script>
@@ -56,15 +57,26 @@
         class="textbox"
         placeholder="Water, Sky, Sun, Moon, Lake"
       /><br />
-      Folder URL: (Leave Blank For Random)<br/>
+      Folder ID: (Leave Blank For Random, Can Be Changed Later)<br />
       <input
         type="text"
-        name="Tags"
+        name="Folder ID"
         class="textbox"
-        placeholder="AkaHusky24.GitHub.io/FolderID"
+        placeholder="AkaHusky24.GitHub.io/(Com/Private)/FolderID"
       /><br />
-      <span>* Required</span><br /><br />
-      <input type="submit" value="Send" class="submit" id="submitButton" />
+      Privacy Type:*<br />
+      <select name="Privacy" required>
+        <option value="Public">Public</option>
+        <option value="Private">Private</option></select
+      ><br />
+      <span
+        >If All Required Inputs Are Not Filled In, Your Upload Will Not Be
+        Accepted</span
+      ><br />
+      <span>Public URL = AkaHusky24.GitHub.io/Com/FolderID</span><br />
+      <span>Private URL = AkaHusky24.GitHub.io/Private/FolderID</span><br />
+      <span>* Required</span><br />
+      <button class="submit" id="submitButton">Submit</button>
       <input type="reset" value="Reset" class="reset" />
     </form>
     <a href="UploadHelp" target="_blank">Send Does Not Work?</a>

@@ -34,9 +34,7 @@ var randomFromList2 = [
   "ScarLovesYou@gmail.com",
   "TempestRunner445@gmail.com",
 ];
-var randomiser2 = Math.floor(Math.random() * randomFromList2.length);
-
-document.getElementById("randommail").placeholder = randomFromList2[randomiser2];
+document.getElementById("randommail").placeholder = randomFromList2[randomiser];
 
 var randomFromList3 = [
     'Sky, Rocket, Sun',
@@ -45,6 +43,6 @@ var randomFromList3 = [
     'Knife, Rabbit, Food',
     'Magnet, Gravity, Pipe'
   ];
-  var randomiser3 = Math.floor(Math.random() * randomFromList3.length);
+  var randomiser2 = Math.floor(Math.random() * randomFromList3.length);
   
-  document.getElementById("randomtag").placeholder = randomFromList3[randomiser3];
+  document.getElementById("randomtag").placeholder = randomFromList3[randomiser2];
