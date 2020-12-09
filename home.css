@@ -91,7 +91,7 @@ form.search button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
+  background: #f32121;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -100,10 +100,29 @@ form.search button {
   margin-top: 4px;
 }
 form.search button:hover {
-  background: #0b7dda;
+  background: #da0b0b;
 }
 form.search::after {
   content: "";
   clear: both;
   display: table;
+}
+.clear::hover {
+  background: #da0b0b;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clear {
+  float: left;
+  background: #f32121;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top: 4px;
+  height: 5%;
 }
