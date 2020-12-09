@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script defer src="JavaScripts\Randomiser.js"></script>
     <link rel="stylesheet" href="fotky.css">
     <link id="icon" rel="icon" href="https://bit.ly/2JYKfKy">
     <meta name="viewport" content="width=device-width, initial-sclae=1.0">
@@ -24,19 +25,3 @@
 
   </body>
 </html>
-
-<script>
-  var randomFromList = [
-    'https://bit.ly/33CR0Yp',
-    'https://bit.ly/3ceDZbp',
-    'https://bit.ly/33Eqhe7',
-    'https://bit.ly/2REfLxO'
-  ]
-
-  var randomiser = Math.floor(Math.random()*randomFromList.length);
-
-  document.getElementById("randomIMG").src = randomFromList[randomiser];
-
-
-  
-</script>
