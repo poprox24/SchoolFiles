@@ -25,7 +25,7 @@ var randomFromList2 = [
   "PutinsBoner45@gmail.com",
   "HailAkaHusky76@gmail.com",
   "RiskNothing@gmail.com",
-  "BadBody7746@gmail.com",
+  "BadBoy7746@gmail.com",
   "xXImyourloverXx@gmail.com",
   "YourMomHatesYou@gmail.com",
   "KarenIsDumb@gmail.com",
