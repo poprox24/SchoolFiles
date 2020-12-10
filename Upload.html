@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script defer src="JavaScripts/SubmitForm.js"></script>
     <meta charset="utf-8" />
-    <script defer src="JavaScripts\NameRandomiser.js"></script>
     <script defer src="JavaScripts\InvalidForm.js"></script>
     <link rel="stylesheet" href="CSS\DefaultStyles.css" />
     <link rel="stylesheet" href="CSS\Upload.css" />
@@ -11,6 +9,16 @@
     <meta name="vievport" content="width=device-width, initial-scale=1" />
     <title>School Files</title>
   </head>
+  <script src="JavaScripts/jquery.min.js"></script>
+  <script type="text/javascript">
+    var submitted = false;
+  </script>
+  <script type="text/javascript">
+    $("#gform").on("submit", function (e) {
+      $("#gform *").fadeOut(2000);
+      $("#gform").prepend("Your submission has been processed...");
+    });
+  </script>
   <body>
     <div class="sidebar">
       <a href="https://akahusky24.github.io/SchoolFiles/">Home</a>
@@ -19,53 +27,25 @@
       <a class="active" href="">Upload</a>
     </div>
     <form
-      action="mailto:akahusky24upload@gmail.com?subject=Upload"
-      method="post"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSd-r1qn5Y5xWV-pq_smdQdcsHpDQOQkMo3Hw0BhspYuTDWnig/formResponse?"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+      name="gform"
       enctype="text/plain"
-      id="form"
+      id="gform"
     >
       Username:<br />
-      <input
-        id="randomtext"
-        type="text"
-        name="Name"
-        class="textbox"
-        placeholder="Name"
-      /><br />
+      <input if="entry.1451049282" type="text" name="entry.1451049282" /><br />
       E-mail:*<br />
-      <input
-        id="randommail"
-        type="email"
-        name="Email"
-        required
-        class="textbox"
-        placeholder="mymail@gmail.com"
-      /><br />
-      Photo URL:*<br />
-      <input
-        type="url"
-        name="URL"
-        required
-        class="textbox"
-        placeholder="https://imgur.com"
-      /><br />
+      <input id="entry.132515229" type="email" name="entry.132515229" /><br />
+      Upload File:*<br />
+      <input type="file" id="file" /><br />
       Photo Tags: (Used For Seach)<br />
-      <input
-        id="randomtag"
-        type="text"
-        name="Tags"
-        class="textbox"
-        placeholder="Water, Sky, Sun, Moon, Lake"
-      /><br />
+      <input id="entry.1786905963" type="text" name="entry.1786905963" /><br />
       Folder ID: (Leave Blank For Random, Can Be Changed Later)<br />
-      <input
-        type="text"
-        name="Folder ID"
-        class="textbox"
-        placeholder="AkaHusky24.GitHub.io/(Com/Private)/FolderID"
-      /><br />
+      <input id="entry.1735072082" type="text" name="entry.1735072082" /><br />
       Privacy Type:*<br />
-      <select name="Privacy" required>
+      <select name="entry.355539189" id="entry.355539189" required>
         <option value="Public">Public</option>
         <option value="Private">Private</option></select
       ><br />
@@ -76,9 +56,9 @@
       <span>Public URL = AkaHusky24.GitHub.io/Com/FolderID</span><br />
       <span>Private URL = AkaHusky24.GitHub.io/Private/FolderID</span><br />
       <span>* Required</span><br />
-      <button class="submit" id="submitButton">Submit</button>
+      <button type="submit" class="submit" id="submitButton">Submit</button>
       <input type="reset" value="Reset" class="reset" />
     </form>
-    <a href="UploadHelp" target="_blank">Send Does Not Work?</a>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   </body>
 </html>
