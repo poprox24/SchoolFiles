@@ -9,3 +9,6 @@
 .hoverover:hover {
   transform: scale(1.5) /* 150% */
 }
+h3 {
+  text-decoration: none;
+}
