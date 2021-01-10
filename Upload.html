@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <script defer src="JavaScripts\InvalidForm.js"></script>
+    <script
+      type="text/javascript"
+      src="JavaScripts/jquery-3.5.1.min.js"
+    ></script>
     <link rel="stylesheet" href="CSS\DefaultStyles.css" />
     <link rel="stylesheet" href="CSS\Upload.css" />
     <link rel="icon" href="https://bit.ly/2JYKfKy" />
     <meta name="vievport" content="width=device-width, initial-scale=1" />
     <title>School Files</title>
   </head>
-  <script src="JavaScripts/jquery.min.js"></script>
   <script type="text/javascript">
     var submitted = false;
   </script>
@@ -26,6 +29,8 @@
       <a href="Updates">Updates</a>
       <a class="active" href="">Upload</a>
     </div>
+    <h1>UPLOAD SITE UNDER MAINTENANCE, Submitting disabled</h1>
+    <!---
     <form
       action="https://docs.google.com/forms/d/e/1FAIpQLSd-r1qn5Y5xWV-pq_smdQdcsHpDQOQkMo3Hw0BhspYuTDWnig/formResponse?"
       target="hidden_iframe"
@@ -59,6 +64,12 @@
       <button type="submit" class="submit" id="submitButton">Submit</button>
       <input type="reset" value="Reset" class="reset" />
     </form>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted) {}"
+    ></iframe>
+  --->
   </body>
 </html>
