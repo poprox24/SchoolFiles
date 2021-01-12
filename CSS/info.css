@@ -16,12 +16,7 @@ font-weight: 600;
 font-size: 20px;
 margin-bottom: 20px;
 }
-.version p{
-  text-align: center;
-  color: #2d3436;
-  font-weight: bold;
-}
-.updateInfo p{
+.Info p{
   padding-top: 10px;
   margin-bottom: 20px;
   color: #7f8c8d;

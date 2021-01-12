@@ -34,7 +34,7 @@
     text-decoration: none;
   }
   .sidebar a.active {
-    background-color: #4CAF50;
+    background-color: #d33333;
     color: white;
   }
   .sidebar a:hover:not(.active) {
