@@ -63,6 +63,7 @@ div.content {
 .imagebox {
   width: 100%;
   display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
 }
