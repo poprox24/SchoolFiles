@@ -1,4 +1,4 @@
-var array = $("#flexbox").children().toArray();
+var array = $("#imagebox").children().toArray();
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
@@ -37,7 +37,7 @@ if (urlParams.get("random")) {
     array[j] = temp;
   }
 
-  $("#flexbox").append(array);
+  $("#imagebox").append(array);
 
   var url = document.location.href;
   window.history.pushState({}, "", url.split("?")[0]);
@@ -54,7 +54,7 @@ if (urlParams.get("oldest")) {
   var i = array;
   i.reverse();
 
-  $("#flexbox").append(i);
+  $("#imagebox").append(i);
 
   var url = document.location.href;
   window.history.pushState({}, "", url.split("?")[0]);

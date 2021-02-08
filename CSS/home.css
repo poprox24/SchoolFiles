@@ -47,7 +47,8 @@ h3 {
   height: auto;
   position: relative;
 }
-.sidebar a, .sidebar form {
+.sidebar a,
+.sidebar form {
   float: left;
 }
 div.content {
@@ -59,14 +60,15 @@ div.content {
     float: none;
   }
 }
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
+.imagebox {
+  width: 100%;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
-.img {
-  display: block;
+img {
+  height: 75%;
+  width: 75%;
 }
 .gallery {
   margin: 0px;
@@ -78,7 +80,7 @@ img.gallery:hover {
 }
 
 /*Form part */
-form.search input[type=text] {
+form.search input[type="text"] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
