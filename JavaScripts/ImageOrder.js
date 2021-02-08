@@ -1,6 +1,32 @@
 var array = $("#flexbox").children().toArray();
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
 
+//Randomize order
 function randomOrder() {
+    window.location.href = window.location.href + "?random=true";
+}
+
+//Make site know, to change to default order
+function newestOrder() {
+    //Add ?default=true after site if it isn't there yet
+  if (!urlParams.get("default")) {
+    history.replaceState(null, "", location.href.split("?")[0]);
+    window.location.href = window.location.href + "?default=true";
+  }
+}
+
+
+//Make site know, to change to oldest order
+function oldestOrder() {
+  //Add ?oldest=true after site if it isn't there yet
+  if (!urlParams.get("oldest")) {
+    window.location.href = window.location.href + "?oldest=true";
+  }
+}
+
+//Change to defaukt order
+if (urlParams.get("random")) {
   var i = array.length,
     j,
     temp;
@@ -13,20 +39,23 @@ function randomOrder() {
 
   $("#flexbox").append(array);
 
-  var url= document.location.href;
+  var url = document.location.href;
   window.history.pushState({}, "", url.split("?")[0]);
 }
 
-function newestOrder() {
-  window.location = window.location.pathname;
-  return false;
+//Change to defaukt order
+if (urlParams.get("default")) {
+  var url = document.location.href;
+  window.history.pushState({}, "", url.split("?")[0]);
 }
 
-function oldestOrder() {
-    window.location.href = window.location.href + "?oldest=true";
+//Change to last order
+if (urlParams.get("oldest")) {
+  var i = array;
+  i.reverse();
+
+  $("#flexbox").append(i);
+
+  var url = document.location.href;
+  window.history.pushState({}, "", url.split("?")[0]);
 }
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString)
-  if (urlParams.get('oldest')) {
-    
-  }

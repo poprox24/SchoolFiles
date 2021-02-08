@@ -27,9 +27,13 @@
         <input type="text" placeholder="Search for tag..." name="q" />
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
-      <button onclick="randomOrder()"><i class="fas fa-random"></i></button
-      ><button onclick="newestOrder()"><i class="fas fa-arrow-up"></i></button
-      ><button onclick="oldestOrder()"><i class="fas fa-arrow-down"></i></button><p>Photo order buttons not done yet</p>
+      <div class="order">
+        <button onclick="oldestOrder()">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button onclick="newestOrder()"><i class="fas fa-arrow-up"></i></button>
+        <button onclick="randomOrder()"><i class="fas fa-random"></i></button>
+      </div>
     </div>
 
     <p id="paragraph"></p>

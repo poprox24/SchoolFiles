@@ -107,6 +107,20 @@ form.search::after {
   clear: both;
   display: table;
 }
+.order button {
+  float: right;
+  width: 3%;
+  padding: 10px;
+  background: #f32121;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.order button:hover {
+  background: #da0b0b;
+}
 .clear::hover {
   background: #da0b0b;
 }
