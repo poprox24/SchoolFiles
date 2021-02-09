@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script defer src="JavaScripts\Login.js"></script>
+    <link rel="stylesheet" href="CSS\DefaultStyles.css" />
+    <link rel="stylesheet" href="CSS\Login.css" />
+    <link id="icon" rel="icon" href="https://bit.ly/2JYKfKy">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <title>School Files</title>
+  </head>
+  <body>
+  
+    <div class="sidebar">
+      <a href="https://akahusky24.github.io/SchoolFiles/">Home</a>
+      <a href="Photos">Photos</a>
+      <a href="Upload">Upload</a>
+      <a href="Info">Info</a>
+    </div>
+
+    <form name="loginform" method="post" >  
+      <form id="form_id" method="post" name="myform">
+        <label>ID :</label>
+        <input type="text" name="username" id="id"/>
+        <label>Password :</label>
+        <input type="password" name="password" id="password"/>
+        <input type="button" value="Login" id="submit" onclick="login()"/> 
+      </form>
+
+  </body>
+</html>
