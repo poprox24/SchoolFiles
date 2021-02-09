@@ -3,12 +3,13 @@ var attempt = 2; // Variable to count number of attempts.
 function login() {
   var uname = "QUh1c2t5MjQ=";
   var pword = "TVlTSVRFS3VyYXRlY2tvTVlTSVRFMTIzTVlTSVRF";
-  var site = "SGlkZGVu";
+  var uname2 = "YWtybw==";
+  var pword2 = "YWtybw==";
   var userinput = document.getElementById("id").value;
   var passinput = document.getElementById("password").value;
-  if (userinput == atob(uname) && passinput == atob(pword)) {
+  if (userinput == atob(uname) && passinput == atob(pword) && !q || userinput == atob(uname2) && passinput == atob(pword2) && q == atob("QWtybw==")) {
     alert("Login Succesful");
-    window.location = atob(site); // Redirecting to other page.
+    loadPage(); // Redirecting to other page.
     return false;
   } else {
     attempt--; // Decrementing by one.

@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script defer src="JavaScripts\Login.js"></script>
     <script
       type="text/javascript"
       src="JavaScripts/jquery-3.5.1.min.js"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/1ad022e74c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS\Login.css" />
+    <link rel="stylesheet" href="CSS\DefaultStyles.css" />
     <script src="JavaScripts/View.js"></script>
     <link id="icon" rel="icon" href="https://bit.ly/2JYKfKy" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School Files</title>
   </head>
   <body>
-    <div id="page" class="page">
-      <p>This site won't work unless you put in page code</p>
-      <h2>What is page code?</h2>
-      <p>This: akahusky24.github.io/SchoolFiles/Hidden/View?q=PAGECODE</p>
-      <p>I put page code on this site, to ensure the site is secure the page codes are encoded for even more secured site.</p>
+    <div class="loader" id="loader">
+      <div class="sidebar">
+        <a href="https://akahusky24.github.io/SchoolFiles/">Home</a>
+        <a href="Photos">Photos</a>
+        <a href="Upload">Upload</a>
+        <a href="Info">Info</a>
+      </div>
+
+      <form id="form_id" method="post" name="myform">
+        <label>ID :</label>
+        <input type="text" name="username" id="id" />
+        <label>Password :</label>
+        <input type="password" name="password" id="password" />
+        <input type="button" value="Login" id="submit" onclick="login()" />
+      </form>
     </div>
   </body>
 </html>
