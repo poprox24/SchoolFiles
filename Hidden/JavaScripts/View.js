@@ -3,13 +3,13 @@ const q = new URLSearchParams(queryString).get("q");
 
 window.onload = function () {
   if (!q) {
-    load("QWZ0ZXJsb2dpbi5odG1s");
+    load(SearchPage);
   }
 }
 
 function loadPage() {
-  if (q == atob("QWtybw==")) {
-    load("QWtyby5odG1s");
+  if (q == atob(q1)) {
+    load(pg1);
   }
   
   var url = document.location.href;

@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="CSS\View.css" />
     <link id="icon" rel="icon" href="https://bit.ly/2JYKfKy" />
-    <meta name="viewport" content="width=device-width, initial-sclae=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School Files</title>
   </head>
   <body>
@@ -14,9 +14,15 @@
         I put page code on this site, to ensure the site is secure the page
         codes are encoded for even more secured site.
       </p>
-      <form class="search">
-        <input type="text" placeholder="Enter page code..." name="q" />
+      <form class="search" name="form">
+        <input id="searchbox" type="text" placeholder="Enter page code..." name="q" onkeyup="toLower()"/>
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
   </body>
 </html>
+
+<script>
+  function toLower() {
+    document.getElementById("searchbox").value =  document.getElementById("searchbox").value.toLowerCase();
+}
+</script>
