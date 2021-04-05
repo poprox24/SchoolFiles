@@ -14,7 +14,7 @@ h3 {
   text-align: center;
 }
 .border {
-  width: 165px;
+  width: 175px;
   height: 2px;
   background: lightgray;
   margin: 5px auto;
@@ -62,9 +62,9 @@ div.content {
 }
 .imagebox {
   top: 12.5%;
-  left: 12.5%;
+  left: 20%;
   position: absolute;
-  width: 75%;
+  width: 60%;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
